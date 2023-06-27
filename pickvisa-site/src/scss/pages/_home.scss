@@ -1,0 +1,143 @@
+@use '../../scss/utils/variable' as *;
+#home .container{
+    padding: 5% 12%;
+}
+#home .container .row{
+    font-family: $default-font-family;
+    .header{
+        font-size: $default-header-size;
+        color: $default-color-third;
+        font-weight: $default-font-weight2;
+        max-width: 520px;
+        line-height: 70px;
+    }
+    .inputs{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        height: 90px;
+        border-radius: 5px;
+        // &::after{
+        // position: absolute;
+        // content: "";
+        // width: 1000px;
+        // height: 100px;
+        // top: -20px;
+        // left: 0;
+        // background-color: white;
+        // border-radius: 5px;
+        // }
+        .search-input{
+            position: relative;
+            z-index: 9999;
+            input{
+                width: 350px;
+                padding: 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: $default-background;
+                &::placeholder{
+                    padding-left: 30px;
+                }
+            }
+            .input2{
+                margin-left: 20px;
+            }
+            i{
+                position: absolute;
+                top: 17px;
+                left: 30px;
+                color: $default-icon-color;
+                font-size: 20px;
+                font-weight: $default-font-weight2;
+            }
+            @media (max-width:1158px){
+                input{
+                    width: 280px;
+                }
+            }
+            @media (max-width:960px){
+                    input{
+                        width: 200px;
+                    }
+        }
+        @media (max-width:720px){
+            input{
+                width: 150px;
+            }
+        }
+        @media (max-width:576px){
+            input{
+                width: 100px;
+            }
+        }
+    }
+        .button{
+            position: relative;
+            z-index: 9999;
+            margin-left: 20px;
+            a{
+                text-decoration: none;
+                display: inline-block;
+                background-color:#319AAF;
+                width: 130px;
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                transition: 0.3s ease-in-out;
+              &:hover{
+                background-color: $default-icon-color;
+              }
+            }
+            i{
+                position: absolute;
+                top: 20px;
+                left: 5px;
+                color: $default-color-third;
+            }
+            @media (max-width:1158px){
+                a{
+                    width: 80px;
+                }
+                i{
+                    display: none;
+                }
+            }
+            @media (max-width:960px){
+                a{
+                    width: 60px;
+                    font-size: 12px;
+                }
+                i{
+                    display: none;
+                }
+    }
+    @media (max-width:720px){
+        a{
+            width: 45px;
+            font-size: 8px;
+        }
+        i{
+            display: none;
+        }
+    }
+    @media (max-width:576px){
+        a{
+            width: 40px;
+            font-size: 6px;
+        }
+        i{
+            display: none;
+        }
+    }
+        }
+    }
+}

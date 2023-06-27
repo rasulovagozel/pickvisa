@@ -1,0 +1,50 @@
+@use '../../utils/variable' as *;
+footer{
+    .container{
+        padding: 2% 5% 0 5%;
+        font-family: $default-font-family;
+        .row{
+        justify-content: center;
+        align-items: baseline;
+        .col-6{
+            p{
+                font-size: $default-font-size;
+                color: $default-color-second;
+                max-width: 240px;
+                line-height: 20px;
+                margin-top: 20px;
+            }
+            ul{
+                margin-top: 20px;
+                list-style: none;
+                li{
+                    display: inline-block;
+                    padding-right: 20px;
+                    a{
+                        color: $default-color-second;
+                    }
+                }
+            }
+        }
+        .col-2{
+            ul{
+                li{
+                    padding-bottom: 20px;
+                    a{
+                        text-decoration: none;
+                        color: $default-color-second;
+                        font-size: $default-font-size;
+                    }
+                }
+                li:nth-child(1){
+                    a{
+                        color: $default-color ;
+                        font-size: $default-text-size;
+                        font-weight: $default-font-weight2;
+                    }
+                }
+            }
+        }
+        }
+    }
+}
